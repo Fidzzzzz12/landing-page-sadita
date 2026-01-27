@@ -1,0 +1,429 @@
+/* Sadita Indonesia Landing Page Styles */
+/* Converted from React/TypeScript to Vanilla CSS */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+/* CSS Custom Properties (Variables) */
+:root {
+    /* Sadita Indonesia Brand Colors - Agricultural/Health Theme */
+    --color-background: 45 30% 98%;
+    --color-foreground: 25 30% 15%;
+    
+    --color-card: 0 0% 100%;
+    --color-card-foreground: 25 30% 15%;
+    
+    /* Primary - Maroon Red (#800000) */
+    --color-primary: 0 100% 25%;
+    --color-primary-foreground: 45 30% 98%;
+    
+    /* Secondary - Warm Earth Brown */
+    --color-secondary: 30 35% 45%;
+    --color-secondary-foreground: 45 30% 98%;
+    
+    /* Muted - Soft Sage */
+    --color-muted: 90 15% 92%;
+    --color-muted-foreground: 25 20% 40%;
+    
+    /* Accent - Golden Yellow (#fbc663) */
+    --color-accent: 43 95% 69%;
+    --color-accent-foreground: 25 30% 15%;
+    
+    --color-destructive: 0 84.2% 60.2%;
+    --color-destructive-foreground: 210 40% 98%;
+    
+    --color-border: 45 20% 88%;
+    --color-input: 45 20% 88%;
+    --color-ring: 0 100% 25%;
+    
+    --radius: 0.75rem;
+    
+    /* Custom Sadita Colors - New Palette */
+    --sadita-maroon: 0 100% 25%;     /* #800000 - Maroon red */
+    --sadita-maroon-light: 0 80% 35%; /* Lighter maroon */
+    --sadita-gold: 43 95% 69%;       /* #fbc663 - Golden yellow */
+    --sadita-gold-dark: 43 85% 55%;  /* Darker golden yellow */
+    --sadita-brown: 30 35% 45%;
+    --sadita-brown-dark: 25 40% 25%;
+    --sadita-cream: 45 40% 95%;
+    --sadita-warning: 15 85% 55%;
+    
+    /* Gradients - New Palette */
+    --gradient-hero: linear-gradient(135deg, hsl(0 100% 20%) 0%, hsl(0 80% 30%) 50%, hsl(30 35% 35%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(43 95% 69%) 0%, hsl(43 85% 55%) 100%);
+    --gradient-earth: linear-gradient(180deg, hsl(45 30% 98%) 0%, hsl(45 40% 95%) 100%);
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(25 30% 15% / 0.1);
+    --shadow-card: 0 8px 30px -8px hsl(25 30% 15% / 0.12);
+    --shadow-elevated: 0 20px 50px -12px hsl(25 30% 15% / 0.15);
+    
+    /* Transitions */
+    --transition-fast: 0.15s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+}
+
+/* Dark mode variables (for future use) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-background: 25 30% 8%;
+        --color-foreground: 45 30% 95%;
+        --color-card: 25 25% 12%;
+        --color-card-foreground: 45 30% 95%;
+        --color-primary: 145 45% 45%;
+        --color-primary-foreground: 25 30% 8%;
+        --color-secondary: 30 30% 35%;
+        --color-secondary-foreground: 45 30% 95%;
+        --color-muted: 25 20% 18%;
+        --color-muted-foreground: 45 15% 65%;
+        --color-accent: 38 85% 50%;
+        --color-accent-foreground: 25 30% 8%;
+        --color-border: 25 20% 20%;
+        --color-input: 25 20% 20%;
+        --color-ring: 145 45% 45%;
+    }
+}
+
+/* Base Styles */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: hsl(var(--color-foreground));
+    background-color: hsl(var(--color-background));
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Text Gradients */
+.text-gradient-gold {
+    background: linear-gradient(135deg, hsl(43 95% 69%) 0%, hsl(43 85% 55%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.text-gradient-maroon {
+    background: linear-gradient(135deg, hsl(0 100% 25%) 0%, hsl(0 80% 35%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Background Gradients */
+.bg-hero-gradient {
+    background: linear-gradient(135deg, hsl(0 100% 20%) 0%, hsl(0 80% 30%) 50%, hsl(30 35% 35%) 100%);
+}
+
+.bg-section-warm {
+    background: linear-gradient(180deg, hsl(45 40% 97%) 0%, hsl(45 35% 94%) 100%);
+}
+
+.bg-section-maroon {
+    background: linear-gradient(180deg, hsl(0 30% 95%) 0%, hsl(0 25% 92%) 100%);
+}
+
+/* Shadows */
+.shadow-soft {
+    box-shadow: var(--shadow-soft);
+}
+
+.shadow-card {
+    box-shadow: var(--shadow-card);
+}
+
+.shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+}
+
+/* Button Styles */
+.btn-whatsapp {
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: white;
+    border: none;
+    border-radius: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    text-decoration: none;
+}
+
+.btn-whatsapp:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px -5px rgba(37, 211, 102, 0.4);
+}
+
+.btn-whatsapp:active {
+    transform: translateY(-2px);
+}
+
+/* Animation Classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scale-in {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.5s ease;
+}
+
+.scale-in.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Scroll Indicator Animation */
+.scroll-indicator {
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { 
+        transform: translateY(0); 
+    }
+    50% { 
+        transform: translateY(8px); 
+    }
+}
+
+/* Slow Bounce Animation for Floating Elements */
+.animate-bounce-slow {
+    animation: bounce-slow 3s ease-in-out infinite;
+}
+
+@keyframes bounce-slow {
+    0%, 100% { 
+        transform: translateY(0); 
+    }
+    50% { 
+        transform: translateY(-15px); 
+    }
+}
+
+/* Bounce Arrow Animation */
+.bounce-arrow {
+    transition: transform 0.75s ease-in-out;
+}
+
+/* Pulse Animation for WhatsApp Button */
+.animate-pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { 
+        opacity: 1; 
+    }
+    50% { 
+        opacity: 0.5; 
+    }
+}
+
+/* Hover Effects */
+.group:hover .group-hover\:scale-105 {
+    transform: scale(1.05);
+}
+
+.group:hover .group-hover\:animate-pulse {
+    animation: pulse 2s infinite;
+}
+
+.group:hover .group-hover\:bg-green-200 {
+    background-color: rgb(187 247 208);
+}
+
+.group:hover .group-hover\:bg-orange-200 {
+    background-color: rgb(254 215 170);
+}
+
+.group:hover .group-hover\:shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+}
+
+/* Card Hover Effects */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Product Card Hover Effects */
+.product-card {
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.3);
+}
+
+/* General Button Hover Effects */
+button, .btn, a[class*="btn"] {
+    transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover, a[class*="btn"]:hover {
+    transform: translateY(-3px);
+}
+
+/* Card Components Hover */
+.shadow-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px -8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+    
+    .btn-whatsapp {
+        width: 100%;
+        justify-content: center;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .grid.sm\:grid-cols-2 {
+        grid-template-columns: 1fr;
+    }
+    
+    .grid.md\:grid-cols-3 {
+        grid-template-columns: 1fr;
+    }
+    
+    .grid.lg\:grid-cols-2 {
+        grid-template-columns: 1fr;
+    }
+    
+    .grid.lg\:grid-cols-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Performance Optimizations */
+.lazy {
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+}
+
+.lazy.loaded {
+    opacity: 1;
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .scroll-indicator {
+        animation: none;
+    }
+    
+    .bounce-arrow {
+        transition: none;
+    }
+}
+
+/* Focus Styles for Accessibility */
+a:focus,
+button:focus {
+    outline: 2px solid hsl(var(--sadita-maroon));
+    outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+    .fixed,
+    .sticky {
+        position: static !important;
+    }
+    
+    .shadow-soft,
+    .shadow-card,
+    .shadow-elevated {
+        box-shadow: none !important;
+    }
+    
+    .bg-hero-gradient,
+    .bg-section-warm,
+    .bg-section-green {
+        background: white !important;
+        color: black !important;
+    }
+}

@@ -1,26 +1,865 @@
 <!DOCTYPE html>
-<html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sadita Indonesia - Obat & Nutrisi Hewan Ternak</title>
-    <meta name="description" content="Pendamping perawatan sapi dari Sadita Indonesia untuk membantu menghadapi risiko PMK dan menjaga kondisi ternak tetap prima menjelang Idul Adha." />
-    <meta name="keywords" content="obat sapi, nutrisi ternak, PMK, perawatan sapi, Idul Adha, sapi kurban, APHTHOCLYN, GIZCOW" />
-    <meta name="author" content="PT. Sadita Indonesia" />
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadita Indonesia - Perawatan Sapi Menjelang Idul Adha | APHTHOCLYN & GIZCOW</title>
+    <meta name="description" content="Produk perawatan sapi terbaik dari Sadita Indonesia untuk menjelang Idul Adha. APHTHOCLYN untuk perawatan luar dan GIZCOW untuk dukungan nutrisi. Konsultasi gratis via WhatsApp.">
+    <meta name="keywords" content="perawatan sapi, PMK, Idul Adha, APHTHOCLYN, GIZCOW, Sadita Indonesia, obat sapi, nutrisi ternak, peternak sapi">
+    <meta name="author" content="Sadita Indonesia">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://saditaindonesia.com/">
     
-    <!-- Open Graph / Social Media -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Sadita Indonesia - Obat & Nutrisi Hewan Ternak" />
-    <meta property="og:description" content="Pendamping perawatan sapi untuk membantu menghadapi risiko PMK dan menjaga kondisi ternak tetap prima." />
-    <meta property="og:url" content="https://saditaindonesia.com" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://saditaindonesia.com/">
+    <meta property="og:title" content="Sadita Indonesia - Perawatan Sapi Menjelang Idul Adha">
+    <meta property="og:description" content="Produk perawatan sapi terbaik untuk menjelang Idul Adha. APHTHOCLYN & GIZCOW dari Sadita Indonesia. Konsultasi gratis!">
+    <meta property="og:image" content="https://saditaindonesia.com/src/assets/bg.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:site_name" content="Sadita Indonesia">
     
-    <!-- Canonical -->
-    <link rel="canonical" href="https://saditaindonesia.com" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://saditaindonesia.com/">
+    <meta property="twitter:title" content="Sadita Indonesia - Perawatan Sapi Menjelang Idul Adha">
+    <meta property="twitter:description" content="Produk perawatan sapi terbaik untuk menjelang Idul Adha. APHTHOCLYN & GIZCOW dari Sadita Indonesia.">
+    <meta property="twitter:image" content="https://saditaindonesia.com/src/assets/bg.jpg">
     
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- Favicon - Logo S untuk Sadita Indonesia -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23800000'/><text x='16' y='22' font-family='Arial,sans-serif' font-size='18' font-weight='bold' text-anchor='middle' fill='%23fbc663'>S</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect width='180' height='180' rx='30' fill='%23800000'/><text x='90' y='120' font-family='Arial,sans-serif' font-size='100' font-weight='bold' text-anchor='middle' fill='%23fbc663'>S</text></svg>">
+    
+    <!-- Meta theme color -->
+    <meta name="theme-color" content="#800000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Sadita Indonesia">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    <link rel="preconnect" href="https://unpkg.com">
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="//wa.me">
+    <link rel="dns-prefetch" href="//api.whatsapp.com">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Sadita Indonesia",
+        "description": "Perusahaan obat dan nutrisi hewan ternak yang berkomitmen menjaga kesehatan ternak Indonesia",
+        "url": "https://saditaindonesia.com",
+        "logo": "https://saditaindonesia.com/src/assets/logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+62-812-3456-7890",
+            "contactType": "Customer Service",
+            "availableLanguage": "Indonesian"
+        },
+        "sameAs": [
+            "https://wa.me/6281234567890"
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "ID",
+            "addressLocality": "Indonesia"
+        }
+    }
+    </script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'sadita-maroon': '#800000',
+                        'sadita-maroon-light': 'hsl(0 80% 35%)',
+                        'sadita-gold': '#fbc663',
+                        'sadita-gold-dark': 'hsl(43 85% 55%)',
+                        'sadita-brown': 'hsl(30 35% 45%)',
+                        'sadita-brown-dark': 'hsl(25 40% 25%)',
+                        'sadita-cream': 'hsl(45 40% 95%)',
+                        'sadita-warning': 'hsl(15 85% 55%)',
+                    },
+                    fontFamily: {
+                        'sans': ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+                    },
+                    container: {
+                        center: true,
+                        padding: '1.5rem',
+                        screens: {
+                              '2xl': '1280px',
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+    <main>
+        <!-- Hero Section -->
+        <section class="relative min-h-[600px] sm:min-h-[650px] md:min-h-[700px] lg:min-h-[750px] xl:min-h-[800px] overflow-hidden bg-gradient-to-br from-sadita-maroon via-sadita-maroon-light to-sadita-brown pt-4 sm:pt-6 md:pt-8 lg:pt-12">
+            <!-- Background Image with Overlay -->
+            <div class="absolute inset-0">
+                <img src="src/assets/bg.jpg" alt="Sapi sehat di peternakan" class="w-full h-full object-cover opacity-30">
+            </div>
+
+            <!-- Content -->
+            <div class="container mx-auto relative z-10 pt-4 sm:pt-6 md:pt-8 lg:pt-10 pb-4 sm:pb-6 md:pb-8 lg:pb-12 xl:pb-16">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <!-- Left Content -->
+                    <div class="text-white">
+                        <!-- Badge -->
+                        <div class="fade-in inline-flex items-center gap-2 rounded-full bg-white/15 backdrop-blur-sm px-4 py-2 mb-6">
+                            <img src="src/assets/logo sadita.png" alt="Sadita Logo" class="w-5 h-5 object-contain">
+                            <span class="text-sm font-medium">PT Sadita Indonesia</span>
+                        </div>
+
+                        <!-- Headline -->
+                        <h1 class="fade-in text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6">
+                            Menjelang Idul Adha, 
+                            <span class="text-sadita-gold">Pastikan Sapi Tetap Sehat</span> 
+                            & Nafsu Makan Terjaga
+                        </h1>
+
+                        <!-- Subheadline -->
+                        <p class="fade-in text-base md:text-lg lg:text-xl text-white/85 mb-8 leading-relaxed">
+                            Pendamping perawatan sapi dari <strong>Sadita Indonesia</strong> untuk 
+                            membantu menghadapi risiko PMK dan menjaga kondisi ternak tetap prima.
+                        </p>
+
+                        <!-- CTA Buttons -->
+                        <div class="fade-in mb-4 sm:mb-5 md:mb-6">
+                            <a href="https://wa.me/6281234567890?text=Halo%20Sadita%20Indonesia%2C%20saya%20ingin%20konsultasi%20produk" 
+                               target="_blank" rel="noopener noreferrer" 
+                               class="btn-whatsapp px-6 md:px-8 py-3 md:py-4 rounded-lg text-sm md:text-base font-semibold inline-flex items-center gap-2 group w-full md:w-auto justify-center">
+                                <i data-lucide="message-circle" class="w-4 md:w-5 h-4 md:h-5 group-hover:animate-pulse"></i>
+                                Konsultasi Produk via WhatsApp
+                            </a>
+                        </div>
+
+                        <!-- Trust Indicators -->
+                        <div class="fade-in grid grid-cols-3 gap-2 md:gap-3 lg:gap-4 pt-3 sm:pt-4 md:pt-5 lg:pt-6">
+                            <div class="text-center md:text-left">
+                                <div class="text-xl md:text-2xl lg:text-3xl font-bold text-white">1000+</div>
+                                <div class="text-xs md:text-sm text-white/90">Peternak Terbantu</div>
+                            </div>
+                            <div class="text-center md:text-left">
+                                <div class="text-xl md:text-2xl lg:text-3xl font-bold text-white">5 Tahun</div>
+                                <div class="text-xs md:text-sm text-white/90">Pengalaman</div>
+                            </div>
+                            <div class="text-center md:text-left">
+                                <div class="text-xl md:text-2xl lg:text-3xl font-bold text-white">100%</div>
+                                <div class="text-xs md:text-sm text-white/90">Bahan Berkualitas</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Image -->
+                    <div class="fade-in relative hidden lg:block">
+                        <div class="relative">
+                            <!-- Decorative Background -->
+                            <div class="absolute -top-8 -right-8 w-full h-full bg-sadita-gold/20 rounded-3xl"></div>
+                            
+                            <!-- Main Image -->
+                            <div class="relative bg-white/10 backdrop-blur-sm rounded-3xl p-4 border-4 border-white/30">
+                                <img src="src/assets/bg.jpg" alt="Sapi sehat" class="w-full h-[500px] object-cover rounded-2xl">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wave Divider -->
+            <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none" style="line-height: 0;">
+                <svg viewBox="0 0 1200 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-6 sm:h-8 md:h-10 lg:h-14 xl:h-16 block" preserveAspectRatio="none" style="display: block;">
+                    <path d="M0,0 L0,20 Q300,50 600,20 T1200,20 L1200,0 L1200,60 L0,60 Z" fill="white" stroke="none"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="tentang" class="py-20 lg:py-28 bg-white relative overflow-hidden">
+            <div class="container mx-auto">
+                <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
+                    <!-- Left Image -->
+                    <div class="fade-in relative order-2 lg:order-1 hidden lg:block">
+                        <!-- Main Image Container -->
+                        <div class="relative bg-white rounded-2xl lg:rounded-3xl p-4 lg:p-6 shadow-elevated">
+                            <div class="relative rounded-xl lg:rounded-2xl overflow-hidden">
+                                <img src="/src/assets/img-about.png" alt="Sadita Indonesia" class="w-full h-[300px] md:h-[350px] lg:h-[400px] object-cover">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Content -->
+                    <div class="fade-in order-1 lg:order-2">
+                        <span class="inline-block text-sm md:text-base font-bold text-sadita-maroon uppercase tracking-wider mb-3 md:mb-4">
+                            Tentang Kami
+                        </span>
+                        <div class="flex items-center gap-3 mb-4 md:mb-6">
+                            <!-- Logo - Only visible on mobile -->
+                            <img src="src/assets/logo sadita.png" alt="Sadita Logo" class="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:hidden object-contain">
+                            <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900">
+                                Sadita Indonesia
+                            </h2>
+                        </div>
+                        <p class="text-base md:text-lg text-gray-600 leading-relaxed mb-6 md:mb-8">
+                            Perusahaan obat dan nutrisi hewan ternak yang berkomitmen membantu peternak 
+                            menjaga <strong class="text-gray-900">kesehatan, daya tahan, dan performa sapi</strong> melalui 
+                            produk berkualitas yang mudah diaplikasikan di lapangan.
+                        </p>
+
+                        <!-- Features Grid 2x2 -->
+                        <div class="grid grid-cols-2 gap-4 md:gap-6">
+                            <div class="flex items-start gap-3">
+                                <div class="w-10 h-10 md:w-12 md:h-12 rounded-lg md:rounded-xl bg-red-100 flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="award" class="w-5 h-5 md:w-6 md:h-6 text-sadita-maroon"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-sm md:text-base text-gray-900 mb-1">Terdaftar Resmi</h3>
+                                    <p class="text-xs md:text-sm text-gray-600">Produk terdaftar dan memenuhi standar</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div class="w-10 h-10 md:w-12 md:h-12 rounded-lg md:rounded-xl bg-amber-100 flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="shield-check" class="w-5 h-5 md:w-6 md:h-6 text-sadita-gold"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-sm md:text-base text-gray-900 mb-1">Info Lengkap</h3>
+                                    <p class="text-xs md:text-sm text-gray-600">Konsultasi gratis via WhatsApp</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div class="w-10 h-10 md:w-12 md:h-12 rounded-lg md:rounded-xl bg-red-100 flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="beaker" class="w-5 h-5 md:w-6 md:h-6 text-sadita-maroon"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-sm md:text-base text-gray-900 mb-1">Formula Teruji</h3>
+                                    <p class="text-xs md:text-sm text-gray-600">Dikembangkan dengan riset lapangan</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div class="w-10 h-10 md:w-12 md:h-12 rounded-lg md:rounded-xl bg-amber-100 flex items-center justify-center flex-shrink-0">
+                                    <i data-lucide="truck" class="w-5 h-5 md:w-6 md:h-6 text-sadita-gold"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-sm md:text-base text-gray-900 mb-1">Pengiriman</h3>
+                                    <p class="text-xs md:text-sm text-gray-600">Ke seluruh Indonesia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trust Badge -->
+                <div class="scale-in mt-16 flex flex-wrap items-center justify-center gap-4 text-sm text-gray-500">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-sadita-maroon"></i>
+                        <span>Produk Berkualitas</span>
+                    </div>
+                    <span class="hidden sm:block text-gray-300">•</span>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-sadita-maroon"></i>
+                        <span>Dukungan Konsultasi</span>
+                    </div>
+                    <span class="hidden sm:block text-gray-300">•</span>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check-circle-2" class="w-5 h-5 text-sadita-maroon"></i>
+                        <span>Pengiriman Seluruh Indonesia</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Problem Section -->
+        <section class="py-20 lg:py-28 bg-gray-50 relative overflow-hidden border-y border-gray-200">
+            <!-- Decorative Background -->
+            <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-orange-50 to-transparent"></div>
+            
+            <div class="container mx-auto relative">
+                <div class="fade-in text-center max-w-3xl mx-auto mb-16">
+                    <span class="inline-flex items-center gap-2 text-sm font-semibold text-sadita-maroon uppercase tracking-wider mb-4">
+                        <i data-lucide="alert-triangle" class="w-4 h-4 text-sadita-maroon"></i>
+                        Masalah Umum
+                    </span>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                        Tantangan Menjelang 
+                        <span class="text-sadita-maroon">Idul Adha</span>
+                    </h2>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Banyak peternak menghadapi masalah ini dan seringkali hanya menunggu 
+                        tanpa penanganan yang tepat.
+                    </p>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="fade-in group card-hover relative bg-white rounded-2xl p-6 border-2 border-transparent hover:border-red-200 shadow-soft hover:shadow-card transition-all duration-300">
+                        <div class="w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center mb-5 group-hover:bg-red-200 transition-colors">
+                            <i data-lucide="trending-down" class="w-6 h-6 text-sadita-maroon"></i>
+                        </div>
+                        
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Nafsu Makan Menurun</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Sapi tidak mau makan, berat badan turun menjelang kurban
+                        </p>
+                    </div>
+
+                    <div class="fade-in group card-hover relative bg-white rounded-2xl p-6 border-2 border-transparent hover:border-red-200 shadow-soft hover:shadow-card transition-all duration-300">
+                        <div class="w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center mb-5 group-hover:bg-red-200 transition-colors">
+                            <i data-lucide="alert-triangle" class="w-6 h-6 text-sadita-maroon"></i>
+                        </div>
+                        
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Luka di Mulut & Kuku</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Mengganggu aktivitas makan dan mobilitas sapi
+                        </p>
+                    </div>
+
+                    <div class="fade-in group card-hover relative bg-white rounded-2xl p-6 border-2 border-transparent hover:border-red-200 shadow-soft hover:shadow-card transition-all duration-300">
+                        <div class="w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center mb-5 group-hover:bg-red-200 transition-colors">
+                            <i data-lucide="bug" class="w-6 h-6 text-sadita-maroon"></i>
+                        </div>
+                        
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Risiko Infeksi</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Bakteri dan virus dapat memperburuk kondisi ternak
+                        </p>
+                    </div>
+
+                    <div class="fade-in group card-hover relative bg-white rounded-2xl p-6 border-2 border-transparent hover:border-red-200 shadow-soft hover:shadow-card transition-all duration-300">
+                        <div class="w-12 h-12 rounded-xl bg-red-100 flex items-center justify-center mb-5 group-hover:bg-red-200 transition-colors">
+                            <i data-lucide="clock" class="w-6 h-6 text-sadita-maroon"></i>
+                        </div>
+                        
+                        <h3 class="text-lg font-bold text-gray-900 mb-2">Pemulihan Lambat</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Kondisi sapi tidak kunjung membaik meski sudah dirawat
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Call to Action Message -->
+                <div class="scale-in mt-12 text-center">
+                    <div class="inline-flex items-center gap-4 bg-red-100 rounded-full px-8 py-4">
+                        <span class="text-2xl">👉</span>
+                        <span class="text-gray-900 font-medium">
+                            Perlu <strong class="text-sadita-maroon">pendamping perawatan yang tepat</strong>, 
+                            bukan sekadar menunggu.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Section -->
+        <section id="produk" class="py-16 lg:py-24 bg-section-maroon">
+            <div class="container mx-auto">
+                <div class="fade-in text-center max-w-3xl mx-auto mb-16">
+                    <span class="inline-block text-sm font-semibold text-sadita-maroon uppercase tracking-wider mb-4">
+                        Solusi Kami
+                    </span>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-relaxed">
+                        Solusi Lengkap 
+                        <span class="text-gradient-maroon">Perawatan Ternak</span>
+                    </h2>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Kombinasi perawatan eksternal, dukungan nutrisi internal, dan pengendalian parasit untuk 
+                        kesehatan ternak yang optimal.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <!-- APHTHOCLYN Product -->
+                    <div class="fade-in group product-card bg-white rounded-3xl shadow-card hover:shadow-elevated overflow-hidden transition-all duration-300">
+                        <!-- Product Header -->
+                        <div class="relative p-8 pb-0 bg-gradient-to-br from-red-50 to-transparent">
+                            <div class="flex items-start justify-between mb-6">
+                                <div>
+                                    <span class="inline-block text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full mb-3 bg-red-200 text-sadita-maroon">
+                                        Perawatan Luar
+                                    </span>
+                                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900">APHTHOCLYN</h3>
+                                    <p class="text-gray-600 mt-1">Salep oles anti Aphthovirus PMK</p>
+                                </div>
+                                <div class="w-12 h-12 rounded-xl bg-red-200 flex items-center justify-center">
+                                    <i data-lucide="droplets" class="w-6 h-6 text-sadita-maroon"></i>
+                                </div>
+                            </div>
+                            
+                            <!-- Product Image -->
+                            <div class="relative mx-auto w-48 h-48 flex items-center justify-center">
+                                <img src="src/assets/product-aphthoclyn.jpg" alt="APHTHOCLYN" 
+                                     class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                        </div>
+
+                        <!-- Product Content -->
+                        <div class="p-8">
+                            <!-- Benefits -->
+                            <div class="mb-6">
+                                <h4 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">
+                                    Manfaat Utama
+                                </h4>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start gap-3">
+                                        <i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5 flex-shrink-0 text-sadita-maroon"></i>
+                                        <span class="text-gray-600">Membantu mengurangi virus PMK di area mulut & kuku</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5 flex-shrink-0 text-sadita-maroon"></i>
+                                        <span class="text-gray-600">Membunuh bakteri di permukaan luka</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5 flex-shrink-0 text-sadita-maroon"></i>
+                                        <span class="text-gray-600">Menjaga area luka tetap bersih</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Usage -->
+                            <div class="bg-gray-50 rounded-xl p-5">
+                                <h4 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-3">
+                                    Cara Pakai
+                                </h4>
+                                <ol class="space-y-2">
+                                    <li class="flex items-start gap-3 text-sm">
+                                        <span class="w-5 h-5 rounded-full bg-sadita-maroon text-white flex items-center justify-center text-xs font-bold flex-shrink-0">1</span>
+                                        <span class="text-gray-600">Oleskan pada luka mulut & kaki sapi</span>
+                                    </li>
+                                    <li class="flex items-start gap-3 text-sm">
+                                        <span class="w-5 h-5 rounded-full bg-sadita-maroon text-white flex items-center justify-center text-xs font-bold flex-shrink-0">2</span>
+                                        <span class="text-gray-600">Aplikasikan 2–3 kali sehari</span>
+                                    </li>
+                                    <li class="flex items-start gap-3 text-sm">
+                                        <span class="w-5 h-5 rounded-full bg-sadita-maroon text-white flex items-center justify-center text-xs font-bold flex-shrink-0">3</span>
+                                        <span class="text-gray-600">Pastikan area bersih & kering sebelum pengolesan</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- GIZCOW Product -->
+                    <div class="fade-in group product-card bg-white rounded-3xl shadow-card hover:shadow-elevated overflow-hidden transition-all duration-300">
+                        <!-- Product Header -->
+                        <div class="relative p-8 pb-0 bg-gradient-to-br from-amber-50 to-transparent">
+                            <div class="flex items-start justify-between mb-6">
+                                <div>
+                                    <span class="inline-block text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full mb-3 bg-amber-200 text-sadita-brown">
+                                        Dukungan Nutrisi
+                                    </span>
+                                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900">GIZCOW</h3>
+                                    <p class="text-gray-600 mt-1">Bubur gizi untuk membantu pemulihan sapi</p>
+                                </div>
+                                <div class="w-12 h-12 rounded-xl bg-amber-200 flex items-center justify-center">
+                                    <i data-lucide="leaf" class="w-6 h-6 text-sadita-brown"></i>
+                                </div>
+                            </div>
+                            
+                            <!-- Product Image -->
+                            <div class="relative mx-auto w-48 h-48 flex items-center justify-center">
+                                <img src="src/assets/product-gizcow.jpg" alt="GIZCOW" 
+                                     class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                        </div>
+
+                        <!-- Product Content -->
+                        <div class="p-8">
+                            <!-- Benefits -->
+                            <div class="mb-6">
+                                <h4 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">
+                                    Manfaat Utama
+                                </h4>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start gap-3">
+                                        <i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5 flex-shrink-0 text-sadita-brown"></i>
+                                        <span class="text-gray-600">Membantu meningkatkan nafsu makan</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5 flex-shrink-0 text-sadita-brown"></i>
+                                        <span class="text-gray-600">Mendukung daya tahan tubuh sapi</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5 flex-shrink-0 text-sadita-brown"></i>
+                                        <span class="text-gray-600">Membantu mempercepat pemulihan kondisi</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Usage -->
+                            <div class="bg-gray-50 rounded-xl p-5">
+                                <h4 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-3">
+                                    Cara Pakai
+                                </h4>
+                                <ol class="space-y-2">
+                                    <li class="flex items-start gap-3 text-sm">
+                                        <span class="w-5 h-5 rounded-full bg-sadita-brown text-white flex items-center justify-center text-xs font-bold flex-shrink-0">1</span>
+                                        <span class="text-gray-600">1 sachet dicampur dengan 2,5 L air</span>
+                                    </li>
+                                    <li class="flex items-start gap-3 text-sm">
+                                        <span class="w-5 h-5 rounded-full bg-sadita-brown text-white flex items-center justify-center text-xs font-bold flex-shrink-0">2</span>
+                                        <span class="text-gray-600">Campurkan ke pakan hijauan/konsentrat</span>
+                                    </li>
+                                    <li class="flex items-start gap-3 text-sm">
+                                        <span class="w-5 h-5 rounded-full bg-sadita-brown text-white flex items-center justify-center text-xs font-bold flex-shrink-0">3</span>
+                                        <span class="text-gray-600">Berikan 2–3 kali sehari</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DITA BENDAZOLE Product -->
+                    <div class="fade-in group product-card bg-white rounded-3xl shadow-card hover:shadow-elevated overflow-hidden transition-all duration-300">
+                        <!-- Product Header -->
+                        <div class="relative p-8 pb-0 bg-gradient-to-br from-blue-50 to-transparent">
+                            <div class="flex items-start justify-between mb-6">
+                                <div>
+                                    <span class="inline-block text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full mb-3 bg-blue-200 text-blue-800">
+                                        Anti Parasit
+                                    </span>
+                                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900">DITA BENDAZOLE</h3>
+                                    <p class="text-gray-600 mt-1">Obat cacing untuk berbagai jenis ternak</p>
+                                </div>
+                                <div class="w-12 h-12 rounded-xl bg-blue-200 flex items-center justify-center">
+                                    <i data-lucide="shield-check" class="w-6 h-6 text-blue-800"></i>
+                                </div>
+                            </div>
+                            
+                            <!-- Product Image Placeholder -->
+                            <div class="relative mx-auto w-48 h-48 flex items-center justify-center">
+                                <div class="w-32 h-40 bg-blue-100 rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-500">
+                                    <i data-lucide="pill" class="w-16 h-16 text-blue-800"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Content -->
+                        <div class="p-8">
+                            <!-- Benefits -->
+                            <div class="mb-6">
+                                <h4 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-4">
+                                    Manfaat Utama
+                                </h4>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start gap-3">
+                                        <i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5 flex-shrink-0 text-blue-800"></i>
+                                        <span class="text-gray-600">Efektif membasmi cacing pada sapi, kambing, domba, dan unggas</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5 flex-shrink-0 text-blue-800"></i>
+                                        <span class="text-gray-600">Menangani cacing dewasa, telur, hingga larva</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5 flex-shrink-0 text-blue-800"></i>
+                                        <span class="text-gray-600">Mendukung pertumbuhan, kenaikan bobot, efisiensi pakan, dan daya tahan ternak</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Usage -->
+                            <div class="bg-gray-50 rounded-xl p-5">
+                                <h4 class="text-sm font-semibold text-gray-900 uppercase tracking-wider mb-3">
+                                    Cara Pakai
+                                </h4>
+                                <ol class="space-y-2">
+                                    <li class="flex items-start gap-3 text-sm">
+                                        <span class="w-5 h-5 rounded-full bg-blue-800 text-white flex items-center justify-center text-xs font-bold flex-shrink-0">1</span>
+                                        <span class="text-gray-600">Ikuti petunjuk label atau anjuran dokter hewan</span>
+                                    </li>
+                                    <li class="flex items-start gap-3 text-sm">
+                                        <span class="w-5 h-5 rounded-full bg-blue-800 text-white flex items-center justify-center text-xs font-bold flex-shrink-0">2</span>
+                                        <span class="text-gray-600">Dapat dicampur pakan atau diberikan langsung sesuai sediaan</span>
+                                    </li>
+                                    <li class="flex items-start gap-3 text-sm">
+                                        <span class="w-5 h-5 rounded-full bg-orange-600 text-white flex items-center justify-center text-xs font-bold flex-shrink-0">⚠️</span>
+                                        <span class="text-gray-600"><strong>Peringatan:</strong> Tidak dianjurkan untuk ternak bunting trimester pertama</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Why Both Section -->
+        <section class="py-20 lg:py-28 bg-white relative overflow-hidden">
+            <!-- Decorative Elements -->
+            <div class="absolute top-20 left-0 w-72 h-72 bg-red-50 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 right-0 w-72 h-72 bg-amber-50 rounded-full blur-3xl"></div>
+
+            <div class="container mx-auto relative">
+                <div class="fade-in text-center max-w-3xl mx-auto mb-16">
+                    <span class="inline-block text-sm font-semibold text-sadita-maroon uppercase tracking-wider mb-4">
+                        Kombinasi Terbaik
+                    </span>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                        Kenapa Digunakan 
+                        <span class="text-sadita-maroon">Bersama?</span>
+                    </h2>
+                </div>
+
+                <!-- Combination Visual -->
+                <div class="scale-in max-w-4xl mx-auto">
+                    <div class="bg-white rounded-3xl shadow-elevated p-8 lg:p-12">
+                        <div class="grid md:grid-cols-[1fr_auto_1fr] gap-8 items-center">
+                            <!-- APHTHOCLYN -->
+                            <div class="text-center md:text-left">
+                                <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-red-100 mb-4">
+                                    <i data-lucide="droplets" class="w-8 h-8 text-sadita-maroon"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">APHTHOCLYN</h3>
+                                <p class="text-gray-600">
+                                    Perawatan <strong class="text-sadita-maroon">luar</strong> pada luka mulut & kuku
+                                </p>
+                            </div>
+
+                            <!-- Plus Sign -->
+                            <div class="flex items-center justify-center">
+                                <div class="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center">
+                                    <span class="text-2xl font-bold text-sadita-maroon">+</span>
+                                </div>
+                            </div>
+
+                            <!-- GIZCOW -->
+                            <div class="text-center md:text-right">
+                                <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-amber-100 mb-4">
+                                    <i data-lucide="leaf" class="w-8 h-8 text-sadita-brown"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-2">GIZCOW</h3>
+                                <p class="text-gray-600">
+                                    Dukungan nutrisi dari <strong class="text-sadita-brown">dalam</strong>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Result Arrow -->
+                        <div class="flex justify-center my-8">
+                            <div class="bounce-arrow">
+                                <i data-lucide="arrow-right" class="w-8 h-8 text-sadita-maroon rotate-90"></i>
+                            </div>
+                        </div>
+
+                        <!-- Result -->
+                        <div class="bg-gradient-to-r from-red-50 via-red-50 to-red-100 rounded-2xl p-6 lg:p-8 text-center">
+                            <div class="flex items-center justify-center gap-2 mb-4">
+                                <i data-lucide="sparkles" class="w-6 h-6 text-sadita-maroon"></i>
+                                <h4 class="text-lg font-bold text-gray-900">Hasil Optimal</h4>
+                                <i data-lucide="sparkles" class="w-6 h-6 text-sadita-maroon"></i>
+                            </div>
+                            <p class="text-lg text-gray-600 max-w-xl mx-auto">
+                                Pendekatan ini membantu sapi 
+                                <strong class="text-gray-900">lebih nyaman</strong>, 
+                                <strong class="text-gray-900">lebih pulih</strong>, dan 
+                                <strong class="text-gray-900">lebih siap dijual atau dikurbankan</strong>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Target Section -->
+        <section class="py-20 lg:py-28 bg-gray-50">
+            <div class="container mx-auto">
+                <div class="fade-in text-center max-w-3xl mx-auto mb-16">
+                    <span class="inline-block text-sm font-semibold text-sadita-maroon uppercase tracking-wider mb-4">
+                        Untuk Siapa
+                    </span>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                        Siapa yang Cocok?
+                    </h2>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Produk Sadita Indonesia dirancang untuk semua yang peduli dengan 
+                        kesehatan dan performa ternak.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <div class="fade-in group text-center">
+                        <div class="relative inline-flex">
+                            <div class="w-24 h-24 rounded-2xl bg-white shadow-card flex items-center justify-center mb-6 group-hover:shadow-elevated transition-shadow">
+                                <i data-lucide="user" class="w-10 h-10 text-sadita-maroon"></i>
+                            </div>
+                            <div class="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-sadita-maroon flex items-center justify-center">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-white"></i>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Peternak Sapi</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Yang ingin menjaga kesehatan ternak dengan produk berkualitas
+                        </p>
+                    </div>
+
+                    <div class="fade-in group text-center">
+                        <div class="relative inline-flex">
+                            <div class="w-24 h-24 rounded-2xl bg-white shadow-card flex items-center justify-center mb-6 group-hover:shadow-elevated transition-shadow">
+                                <i data-lucide="store" class="w-10 h-10 text-sadita-maroon"></i>
+                            </div>
+                            <div class="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-sadita-maroon flex items-center justify-center">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-white"></i>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Penjual Sapi Kurban</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Yang perlu memastikan sapi dalam kondisi prima saat dijual
+                        </p>
+                    </div>
+
+                    <div class="fade-in group text-center">
+                        <div class="relative inline-flex">
+                            <div class="w-24 h-24 rounded-2xl bg-white shadow-card flex items-center justify-center mb-6 group-hover:shadow-elevated transition-shadow">
+                                <i data-lucide="building-2" class="w-10 h-10 text-sadita-maroon"></i>
+                            </div>
+                            <div class="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-sadita-maroon flex items-center justify-center">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-white"></i>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Pengelola Kandang</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Yang bertanggung jawab atas kesehatan banyak ternak
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 lg:py-28 bg-hero-gradient relative overflow-hidden">
+            <!-- Decorative Pattern -->
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-10 left-10 w-32 h-32 rounded-full border-2 border-white"></div>
+                <div class="absolute bottom-20 right-20 w-48 h-48 rounded-full border-2 border-white"></div>
+                <div class="absolute top-1/2 left-1/4 w-24 h-24 rounded-full border-2 border-white"></div>
+            </div>
+
+            <div class="container mx-auto relative">
+                <div class="fade-in text-center max-w-3xl mx-auto">
+                    <!-- Clock Icon -->
+                    <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-white/15 backdrop-blur-sm mb-6">
+                        <i data-lucide="clock" class="w-8 h-8 text-sadita-gold"></i>
+                    </div>
+
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+                        Jaga Kondisi Sapi 
+                        <span class="text-gradient-gold">Lebih Awal</span>
+                    </h2>
+                    
+                    <p class="text-lg md:text-xl text-white/85 mb-10 leading-relaxed">
+                        Terutama menjelang Idul Adha, pencegahan dan perawatan dini adalah kunci. 
+                        Konsultasikan kebutuhan ternak Anda dengan tim kami.
+                    </p>
+
+                    <!-- CTA Button -->
+                    <div class="scale-in">
+                        <a href="https://wa.me/6281234567890?text=Halo%20Sadita%20Indonesia%2C%20saya%20ingin%20konsultasi%20produk" 
+                           target="_blank" rel="noopener noreferrer" 
+                           class="btn-whatsapp group text-lg px-10 py-6 rounded-xl font-medium inline-flex items-center gap-3">
+                            <i data-lucide="message-circle" class="w-6 h-6 group-hover:animate-pulse"></i>
+                            Tanya Produk & Cara Pakai Sekarang
+                        </a>
+                        <p class="text-sm text-white/60 mt-4">
+                            Konsultasi ringan, sesuai kondisi kandang Anda
+                        </p>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="scale-in flex flex-wrap items-center justify-center gap-6 mt-12 pt-8 border-t border-white/20">
+                        <div class="flex items-center gap-2 text-white/80">
+                            <i data-lucide="phone" class="w-4 h-4"></i>
+                            <span class="text-sm">+62 812-3456-7890</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-white/80">
+                            <i data-lucide="map-pin" class="w-4 h-4"></i>
+                            <span class="text-sm">Indonesia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="kontak" class="bg-gray-900 text-white py-12 lg:py-16">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-3 gap-10 mb-10">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-sadita-maroon flex items-center justify-center font-bold text-lg text-white">
+                            S
+                        </div>
+                        <span class="font-bold text-xl">Sadita Indonesia</span>
+                    </div>
+                    <p class="text-white/70 text-sm leading-relaxed">
+                        Perusahaan obat dan nutrisi hewan ternak yang berkomitmen menjaga kesehatan ternak Indonesia.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold mb-4">Tautan Cepat</h4>
+                    <ul class="space-y-2 text-sm text-white/70">
+                        <li><a href="#tentang" class="hover:text-white transition-colors">Tentang Kami</a></li>
+                        <li><a href="#produk" class="hover:text-white transition-colors">Produk</a></li>
+                        <li><a href="#kontak" class="hover:text-white transition-colors">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-semibold mb-4">Hubungi Kami</h4>
+                    <ul class="space-y-3 text-sm text-white/70">
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="phone" class="w-4 h-4"></i>
+                            <span>+62 812-3456-7890</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="mail" class="w-4 h-4"></i>
+                            <span>info@saditaindonesia.com</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4"></i>
+                            <span>Indonesia</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom -->
+            <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/50">
+                <p>&copy; <span id="current-year"></span> PT. Sadita Indonesia. Hak Cipta Dilindungi.</p>
+                <p>Produk Terdaftar Resmi</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
 </html>

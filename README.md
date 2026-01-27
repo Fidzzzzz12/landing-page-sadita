@@ -1,73 +1,191 @@
-# Welcome to your Lovable project
+# Sadita Indonesia Landing Page
 
-## Project info
+Landing page untuk produk perawatan sapi dari Sadita Indonesia, dibuat dengan HTML, Tailwind CSS, dan JavaScript murni.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 🚀 Fitur
 
-## How can I edit this code?
+- **Responsive Design** - Tampilan optimal di semua perangkat
+- **Modern UI/UX** - Design yang bersih dan profesional
+- **Smooth Animations** - Animasi yang halus dan menarik
+- **SEO Optimized** - Struktur HTML yang SEO-friendly
+- **Fast Loading** - Optimasi performa untuk loading cepat
+- **WhatsApp Integration** - Integrasi langsung dengan WhatsApp Business
 
-There are several ways of editing your application.
+## 📁 Struktur File
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+├── index.html          # File HTML utama
+├── favicon.svg         # Favicon kustom Sadita Indonesia
+├── css/
+│   └── styles.css      # Custom CSS styles
+├── js/
+│   └── main.js         # JavaScript functionality
+├── src/
+│   └── assets/         # Gambar dan aset
+│       ├── hero-cow.jpg
+│       ├── product-aphthoclyn.jpg
+│       └── product-gizcow.jpg
+├── public/
+│   └── robots.txt      # SEO robots file
+├── sitemap.xml         # Sitemap untuk SEO
+└── README.md           # Dokumentasi
 ```
 
-**Edit a file directly in GitHub**
+## 🛠 Teknologi yang Digunakan
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- **HTML5** - Struktur semantik
+- **Tailwind CSS** - Framework CSS utility-first (via CDN)
+- **Vanilla JavaScript** - Interaktivitas tanpa framework
+- **Lucide Icons** - Icon library (via CDN)
+- **Google Fonts** - Typography (Plus Jakarta Sans)
 
-**Use GitHub Codespaces**
+## 🚀 Cara Menjalankan
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. **Download atau clone** file-file proyek
+2. **Buka index.html** di browser web
+3. **Atau gunakan live server** untuk development
 
-## What technologies are used for this project?
+### Menggunakan Live Server
 
-This project is built with:
+```bash
+# Jika menggunakan VS Code dengan Live Server extension
+# Klik kanan pada index.html > Open with Live Server
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+# Atau menggunakan Python
+python -m http.server 8000
 
-## How can I deploy this project?
+# Atau menggunakan Node.js
+npx serve .
+```
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## 📱 Fitur Responsif
 
-## Can I connect a custom domain to my Lovable project?
+- **Desktop** - Layout multi-kolom dengan animasi penuh
+- **Tablet** - Layout yang disesuaikan untuk layar medium  
+- **Mobile** - Layout single-column dengan mobile menu
 
-Yes, you can!
+## 🎨 Komponen Utama
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Hero Section
+- Background image dengan overlay
+- Headline dan subheadline
+- CTA buttons
+- Trust indicators
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### About Section
+- Informasi perusahaan
+- Feature cards dengan icons
+- Trust badges
+
+### Problem Section
+- Masalah yang dihadapi peternak
+- Grid layout dengan icons
+
+### Product Section
+- **APHTHOCLYN** (Perawatan Luar)
+- **GIZCOW** (Dukungan Nutrisi)
+- Manfaat dan cara pakai
+
+### Why Both Section
+- Kombinasi produk
+- Visual representation
+
+### Target Section
+- Target audience
+- User personas
+
+### CTA Section
+- Final call-to-action
+- WhatsApp integration
+
+### Footer
+- Company information
+- Contact details
+
+## 📞 Integrasi WhatsApp
+
+Landing page terintegrasi dengan WhatsApp Business:
+- Nomor: +62 812-3456-7890
+- Pesan otomatis untuk konsultasi produk
+
+## 🎯 SEO Features
+
+- Meta tags yang optimal
+- Semantic HTML structure
+- Alt text untuk gambar
+- Sitemap.xml
+- Robots.txt
+- Structured data ready
+
+## 🔧 Kustomisasi
+
+### Mengubah Warna Brand
+Edit variabel CSS di `css/styles.css`:
+
+```css
+:root {
+    --sadita-red: 0 45% 25%;
+    --sadita-gold: 38 90% 55%;
+    --sadita-brown: 30 35% 45%;
+}
+```
+
+### Mengubah Konten
+Edit langsung di `index.html` untuk:
+- Teks dan copy
+- Gambar dan aset  
+- Link dan CTA
+
+### Menambah Animasi
+Gunakan class CSS yang tersedia:
+- `.fade-in` - Fade in dari bawah
+- `.scale-in` - Scale in effect
+- `.visible` - Trigger animasi
+
+## 📱 Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers
+
+## 🚀 Deployment
+
+### Hosting Sederhana
+1. Upload semua file ke web hosting
+2. Pastikan index.html di root directory
+3. Akses melalui domain
+
+### GitHub Pages
+1. Push ke GitHub repository
+2. Enable GitHub Pages di Settings
+3. Pilih branch main sebagai source
+
+### Netlify/Vercel
+1. Connect repository
+2. Deploy otomatis
+3. Custom domain (opsional)
+
+## 📈 Performance
+
+- Menggunakan CDN untuk Tailwind CSS dan icons
+- Lazy loading untuk gambar
+- Optimized animations
+- Minimal JavaScript
+
+## 🤝 Kontribusi
+
+Untuk improvement atau bug fixes:
+1. Fork repository
+2. Buat feature branch
+3. Commit changes
+4. Submit pull request
+
+## 📄 Lisensi
+
+© 2024 PT. Sadita Indonesia. All rights reserved.
+
+---
+
+**Dibuat dengan ❤️ untuk peternak Indonesia**
