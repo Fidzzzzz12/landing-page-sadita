@@ -105,7 +105,7 @@ npx serve .
 ## 📞 Integrasi WhatsApp
 
 Landing page terintegrasi dengan WhatsApp Business:
-- Nomor: +62 812-3456-7890
+- Nomor: +62 853-4032-9914
 - Pesan otomatis untuk konsultasi produk
 
 ## 🎯 SEO Features

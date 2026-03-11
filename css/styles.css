@@ -427,3 +427,42 @@ button:focus {
         color: black !important;
     }
 }
+
+
+/* Horizontal Scroll for Product Cards on Mobile */
+.overflow-x-auto {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--sadita-maroon)) transparent;
+}
+
+.overflow-x-auto::-webkit-scrollbar {
+    height: 6px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+    background: hsl(var(--sadita-maroon));
+    border-radius: 3px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--sadita-maroon-light));
+}
+
+/* Smooth scroll snap for product cards */
+@media (max-width: 1023px) {
+    .overflow-x-auto {
+        scroll-snap-type: x mandatory;
+        scroll-padding: 1rem;
+    }
+    
+    .product-card {
+        scroll-snap-align: start;
+    }
+}

@@ -98,7 +98,7 @@ class SaditaLandingPage {
     }
 
     static openWhatsApp(message = 'Halo Sadita Indonesia, saya ingin konsultasi produk') {
-        const phoneNumber = '6281234567890';
+        const phoneNumber = '6285340329914';
         const encodedMessage = encodeURIComponent(message);
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
         window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
